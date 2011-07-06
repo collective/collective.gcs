@@ -1,10 +1,14 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
-    xmlns:five="http://namespaces.zope.org/five"
-    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="collective.gcs">
 
+  <include package=".browser" />
+
+  <cmf:registerDirectory
+    name="collective_gcs"
+    directory="skins/collective_gcs" />
 
   <genericsetup:registerProfile
       name="default"
@@ -13,6 +17,5 @@
       description="Installs the collective.gcs package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-  <!-- -*- extra stuff goes here -*- -->
-  
+
 </configure>

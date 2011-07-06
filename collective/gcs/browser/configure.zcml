@@ -1,0 +1,45 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="collective.gcs">
+  
+  <!-- search results -->
+  <browser:page
+      for="*"
+      name="gcssearchresults"
+      template="searchresults.pt"
+      permission="zope2.View"
+      />
+  
+  <!-- search page -->
+  <browser:page
+      for="*"
+      name="gcssearch"
+      class=".views.GcsView"
+      template="search.pt"
+      permission="zope2.View"
+      />
+  
+  <browser:page
+      for="*"
+      name="gcsdevsearch"
+      template="search_dev.pt"
+      class=".views.GcsView"
+      permission="zope2.View"
+      />
+  
+  <browser:viewlet
+      name="gcs.searchbox"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".views.GcsSearchbox"
+      permission="zope2.View" 
+      />
+
+  <!-- provider for the dev search snippet -->
+  <adapter
+      name="gcs.devsearch"
+      factory=".views.GcsDevSearch"
+      provides="zope.contentprovider.interfaces.IContentProvider"
+      />
+
+</configure>

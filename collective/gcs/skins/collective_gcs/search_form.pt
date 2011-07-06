@@ -1,0 +1,3 @@
+<tal:dummy
+  define="dummy python:context.REQUEST.response.redirect('@@gcssearch')"
+/>
