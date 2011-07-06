@@ -3,6 +3,13 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="collective.gcs">
   
+  <browser:page
+      name="gcs-controlpanel"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.GcsSettingsControlPanel"
+      permission="cmf.ManagePortal"
+      />
+
   <!-- search results -->
   <browser:page
       for="*"
