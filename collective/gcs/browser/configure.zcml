@@ -8,6 +8,7 @@
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       class=".controlpanel.GcsSettingsControlPanel"
       permission="cmf.ManagePortal"
+      layer="..interfaces.IGcsLayer"
       />
 
   <!-- search results -->
@@ -16,6 +17,7 @@
       name="gcssearchresults"
       template="searchresults.pt"
       permission="zope2.View"
+      layer="..interfaces.IGcsLayer"
       />
   
   <!-- search page -->
@@ -25,6 +27,7 @@
       class=".views.GcsView"
       template="search.pt"
       permission="zope2.View"
+      layer="..interfaces.IGcsLayer"
       />
   
   <browser:page
@@ -33,13 +36,15 @@
       template="search_dev.pt"
       class=".views.GcsView"
       permission="zope2.View"
+      layer="..interfaces.IGcsLayer"
       />
   
   <browser:viewlet
-      name="gcs.searchbox"
+      name="collective.gcs.searchbox"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       class=".views.GcsSearchbox"
       permission="zope2.View" 
+      layer="..interfaces.IGcsLayer"
       />
 
   <!-- provider for the dev search snippet -->

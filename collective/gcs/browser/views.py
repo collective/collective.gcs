@@ -1,17 +1,12 @@
-from zope.interface import Interface
-from zope.interface import Attribute
 from zope.interface import implements
 
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from plone.app.layout.viewlets.common import ViewletBase
+from collective.gcs.interfaces import IGcsInfo
 
 from cornerstone.browser.base import XBrowserView
 from cornerstone.browser.renderer import RendererBase
 
-class IGcsInfo(Interface):
-    """View interface for Google Custom Search.
-    """
-    resultpage = Attribute(u"The link to the resultpage")
 
 class GcsInfo(XBrowserView):
     implements(IGcsInfo)

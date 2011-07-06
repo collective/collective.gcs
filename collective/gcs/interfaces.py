@@ -1,4 +1,5 @@
 from zope import schema
+from zope.interface import Attribute
 from zope.interface import Interface
 from collective.gcs import messageFactory as _
 
@@ -12,5 +13,10 @@ class IGcsSettings(Interface):
             title=_(u'gcs_id_title', u'Google Custom Search ID'),
             description=_(u'gcs_id_help',
                 default=u'ID, as available in the gcs control panel.'),
-            required=True
+            required=True,
         )
+
+class IGcsInfo(Interface):
+    """View interface for Google Custom Search.
+    """
+    resultpage = Attribute(u"The link to the resultpage")

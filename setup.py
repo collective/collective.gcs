@@ -26,6 +26,11 @@ setup(name='collective.gcs',
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
+          'cornerstone.browser',
+          'plone.app.registry',
+          'plone.app.layout',
+          'zope.interface',
+          'zope.schema',
       ],
       entry_points="""
       # -*- Entry points: -*-
