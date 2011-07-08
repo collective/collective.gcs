@@ -4,7 +4,7 @@
     i18n_domain="collective.gcs">
   
   <browser:page
-      name="gcs-controlpanel"
+      name="gcs-settings"
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       class=".controlpanel.GcsSettingsControlPanel"
       permission="cmf.ManagePortal"

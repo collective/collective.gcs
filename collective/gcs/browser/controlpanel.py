@@ -1,5 +1,5 @@
 from plone.app.registry.browser import controlpanel
-from collective.gcs import MessageFactory as _
+from collective.gcs import message_factory as _
 from collective.gcs.interfaces import IGcsSettings
 
 
@@ -12,10 +12,10 @@ class GcsControlPanelEditForm(controlpanel.RegistryEditForm):
             default=u"Settings related to the Custom Search tool by Google.")
 
     def updateFields(self):
-        super(EventControlPanelEditForm, self).updateFields()
+        super(GcsControlPanelEditForm, self).updateFields()
 
     def updateWidgets(self):
-        super(EventControlPanelEditForm, self).updateWidgets()
+        super(GcsControlPanelEditForm, self).updateWidgets()
 
 
 class GcsSettingsControlPanel(controlpanel.ControlPanelFormWrapper):

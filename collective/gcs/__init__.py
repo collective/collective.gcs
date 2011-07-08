@@ -1,2 +1,2 @@
 from zope.i18nmessageid import MessageFactory
-MessageFactory = MessageFactory('collective.gcs')
+message_factory = MessageFactory('collective.gcs')
