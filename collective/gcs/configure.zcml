@@ -4,6 +4,7 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="collective.gcs">
 
+  <include package="plone.app.registry" />
   <include package=".browser" />
 
   <cmf:registerDirectory
