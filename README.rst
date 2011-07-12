@@ -21,8 +21,8 @@ Generic Setup in registry.xml like so:
 Originally written for Qt by Robert Niederreiter, BlueDynamics Alliance.
 
 
-Credits
-=======
+Credit
+======
 
 * Robert Niederreiter, <rnix@squarewave.at>
 * Johannes Raggam, <johannes@raggam.co.at>
