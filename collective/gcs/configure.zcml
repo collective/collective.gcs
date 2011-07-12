@@ -18,5 +18,12 @@
       description="Installs the collective.gcs package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="collective.gcs uninstall"
+      directory="profiles/uninstall"
+      description='Uninstall collective.gcs from Plone'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
 
 </configure>

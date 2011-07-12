@@ -21,6 +21,12 @@ Generic Setup in registry.xml like so:
 Originally written for Qt by Robert Niederreiter, BlueDynamics Alliance.
 
 
+TODO
+====
+* uninstall does not activate plone.searchbox viewlet and leaves
+  collective.gcs.searchbox as is.
+* integrate livesearch
+
 Credit
 ======
 
