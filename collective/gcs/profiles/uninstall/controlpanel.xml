@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<object name="portal_controlpanel">
+    <configlet
+        title="Google Custom Search Settings"
+        action_id="collective.gcs"
+        appId="collective.gcs"
+        category="Products"
+        remove="true" />
+</object>
