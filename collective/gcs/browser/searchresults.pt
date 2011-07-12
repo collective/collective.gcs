@@ -3,26 +3,14 @@
       xmlns:metal="http://xml.zope.org/namespaces/metal"
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       lang="en"
-      metal:use-macro="here/main_template/macros/master"
+      metal:use-macro="context/main_template/macros/master"
       i18n:domain="plone">
-
-<head>
-  <metal:top fill-slot="top_slot">
-    <tal:border define="dummy python:request.set('disable_border', True)" />
-  </metal:top>
-</head>
-
 <body>
 
-<metal:main fill-slot="main">
-    <tal:main-macro metal:define-macro="main">
+<metal:content-core fill-slot="content-core">
+<metal:content-core define-macro="content-core">
 
-        <h1 class="documentFirstHeading" i18n:translate=""> 
-          Search Results
-        </h1>
-
-        <div id="cse-search-results">
-        </div>
+        <div id="cse-search-results"></div>
         <script type="text/javascript">
           var googleSearchIframeName = "cse-search-results";
           var googleSearchFormName = "cse-search-box";
@@ -31,9 +19,9 @@
           var googleSearchPath = "/cse";
         </script>
         <script type="text/javascript" src="http://www.google.com/afsonline/show_afs_search.js"></script>
-
-    </tal:main-macro>
-</metal:main>
+   
+</metal:content-core>
+</metal:content-core>
 
 </body>
 </html>

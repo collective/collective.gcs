@@ -15,8 +15,3 @@ class IGcsSettings(Interface):
                 default=u'ID, as available in the gcs control panel on google.com/cse.'),
             required=True,
         )
-
-class IGcsInfo(Interface):
-    """View interface for Google Custom Search.
-    """
-    resultpage = Attribute(u"The link to the resultpage")

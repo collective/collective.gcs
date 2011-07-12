@@ -2,7 +2,7 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="collective.gcs">
-  
+
   <browser:page
       name="gcs-settings"
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
@@ -19,7 +19,7 @@
       permission="zope2.View"
       layer="..interfaces.IGcsLayer"
       />
-  
+
   <!-- search page -->
   <browser:page
       for="*"
@@ -29,29 +29,13 @@
       permission="zope2.View"
       layer="..interfaces.IGcsLayer"
       />
-  
-  <browser:page
-      for="*"
-      name="gcsdevsearch"
-      template="search_dev.pt"
-      class=".views.GcsView"
-      permission="zope2.View"
-      layer="..interfaces.IGcsLayer"
-      />
-  
+
   <browser:viewlet
       name="collective.gcs.searchbox"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       class=".views.GcsSearchbox"
-      permission="zope2.View" 
+      permission="zope2.View"
       layer="..interfaces.IGcsLayer"
-      />
-
-  <!-- provider for the dev search snippet -->
-  <adapter
-      name="gcs.devsearch"
-      factory=".views.GcsDevSearch"
-      provides="zope.contentprovider.interfaces.IContentProvider"
       />
 
 </configure>
