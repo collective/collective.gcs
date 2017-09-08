@@ -8,8 +8,8 @@
   <include package=".browser" />
 
   <cmf:registerDirectory
-    name="collective_gcs"
-    directory="skins/collective_gcs" />
+      name="collective_gcs"
+      directory="skins/collective_gcs" />
 
   <genericsetup:registerProfile
       name="default"

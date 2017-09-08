@@ -1,9 +1,9 @@
-from zope.component import getUtility
+# -*- coding: utf-8 -*-
+from plone.app.layout.viewlets.common import ViewletBase
 from plone.registry.interfaces import IRegistry
-
 from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-from plone.app.layout.viewlets.common import ViewletBase
+from zope.component import getUtility
 
 
 class GcsBase(object):
@@ -15,8 +15,10 @@ class GcsBase(object):
             return registry['collective.gcs.gcs_id']
         return None
 
+
 class GcsView(BrowserView, GcsBase):
     pass
+
 
 class GcsSearchbox(ViewletBase, GcsBase):
     render = ViewPageTemplateFile('searchbox.pt')

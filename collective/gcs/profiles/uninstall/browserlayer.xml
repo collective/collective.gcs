@@ -1,6 +1,4 @@
 <?xml version="1.0"?>
 <layers>
-  <layer name="collective_gcs_layer"
-    interface="collective.gcs.interfaces.IGcsLayer"
-    remove="true" />
+  <layer remove="true" name="collective_gcs_layer" interface="collective.gcs.interfaces.IGcsLayer" />
 </layers>

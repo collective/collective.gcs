@@ -1,5 +1,4 @@
 <?xml version="1.0"?>
 <layers>
-  <layer name="collective_gcs_layer"
-    interface="collective.gcs.interfaces.IGcsLayer" />
+  <layer name="collective_gcs_layer" interface="collective.gcs.interfaces.IGcsLayer" />
 </layers>

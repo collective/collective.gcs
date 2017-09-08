@@ -5,17 +5,16 @@
     i18n:domain="collective.gcs"
     purge="False">
 
-    <configlet
-        title="Google Custom Search Settings"
-        action_id="collective.gcs"
-        appId="collective.gcs"
-        category="Products"
-        condition_expr=""
-        url_expr="string:${portal_url}/@@gcs-settings"
-        visible="True"
-        i18n:attributes="title">
-            <permission>Manage portal</permission>
-    </configlet>
+  <configlet
+      title="Google Custom Search Settings"
+      action_id="collective.gcs"
+      appId="collective.gcs"
+      category="Products"
+      condition_expr=""
+      url_expr="string:${portal_url}/@@gcs-settings"
+      visible="True"
+      i18n:attributes="title">
+    <permission>Manage portal</permission>
+  </configlet>
 
 </object>
-
